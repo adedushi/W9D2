@@ -15,20 +15,20 @@ class View {
     }
 
     this.el.appendChild(ul);
-    handleClick();
+    // this.el.addEventListener('click', this.handleClick.bind(this));
+    // this.onclick = (e) => this.handleClick(e)
+    this.el.addEventListener('click', (e) => this.handleClick(e));
   }
 
   handleClick(e) {
     e.preventDefault();
     let selected = e.target;
-    let pos = selected.position;
-    selected.playMove(pos);
-
+    let pos = [];
+    pos.push(selected.dataset.position[0], selected.dataset.position[2]);
+    this.game.playMove(pos);
   }
 
-  makeMove(square) {
-
-  }
+  makeMove(square) {}
 
   handleGameOver() {}
 }
