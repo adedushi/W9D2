@@ -1,1 +1,26 @@
-/* Your code here */
+h1 {
+  font-size: 60px;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  padding: 0 0 0 0;
+  width: 300px;
+  border: 5px solid #222;
+}
+
+li {
+  width: 90px;
+  height: 90px;
+  border: 5px solid #222;
+  background: rgba(189, 126, 74, 0.856);
+  list-style-type: none;
+}
+
+li:hover {
+  background: rgb(66, 117, 55);
+}
