@@ -20,10 +20,15 @@ class View {
 
   handleClick(e) {
     e.preventDefault();
-    let selected = document.querySelector();
+    let selected = e.target;
+    let pos = selected.position;
+    selected.playMove(pos);
+
   }
 
-  makeMove(square) {}
+  makeMove(square) {
+
+  }
 
   handleGameOver() {}
 }
